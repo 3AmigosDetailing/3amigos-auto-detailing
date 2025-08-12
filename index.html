@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3 Amigos Auto Detailing</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png') repeat;
+        color: white;
+    }
+    header {
+        background-color: rgba(0,0,0,0.8);
+        padding: 20px;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: #f7c844;
+        text-transform: uppercase;
+    }
+    nav {
+        text-align: center;
+        padding: 10px;
+        background: #111;
+    }
+    nav a {
+        color: #f7c844;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+    nav a:hover {
+        color: white;
+    }
+    section {
+        padding: 40px;
+        background-color: rgba(0,0,0,0.7);
+        margin: 20px auto;
+        max-width: 1000px;
+        border-radius: 10px;
+    }
+    h2 {
+        color: #f7c844;
+        text-align: center;
+    }
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .service {
+        background: rgba(255,255,255,0.05);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .service h3 {
+        color: #f7c844;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: auto;
+    }
+    input, textarea {
+        margin: 10px 0;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    button {
+        background-color: #f7c844;
+        color: black;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: white;
+    }
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: #111;
+        margin-top: 40px;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>3 Amigos Auto Detailing</h1>
+    <p>Bringing Your Ride Back to Showroom Shine</p>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Exterior Detail</h3>
+            <p>Full hand wash, wax, and polish to bring out the shine.</p>
+        </div>
+        <div class="service">
+            <h3>Interior Detail</h3>
+            <p>Deep clean of seats, carpets, and dashboard with premium products.</p>
+        </div>
+        <div class="service">
+            <h3>Full Package</h3>
+            <p>Complete interior and exterior detailing for a total refresh.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 3 Amigos Auto Detailing | All Rights Reserved
+</footer>
+
+</body>
+</html>
